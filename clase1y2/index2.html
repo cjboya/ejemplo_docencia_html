@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- CSS Cascading Style Sheet 
+    Hoja de estilo en cascada 
+    Implementa estilos en elementos previamente estructurados
+    -->
+<!-- Métodos de implementación 
+    1. De manera Interna
+    2. De manera Externa
+    3. En linea
+
+    En linea se incorpora como atributo de etiqueta html
+    -->
+
+<!-- 
+        <algo atributo>
+            contenido (puede ser otras etiquetas Padre(contenedora) -> hija)
+        </algo>
+     -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <!-- estilo interno -->
+    <style>
+        /*CSS 
+        
+        selectores 
+        
+        -> Basicos
+            - Etiquetas: permite modificar por el tipo de etiqueta ej h2 , p, div, etc
+            - ID: Permite la modidicación del elemento cuyo atributo IDentificador corresponda
+            - Clase: Son los que permiten generar un grupo de elementos sin importar sus etiquetas(tipos)
+        -> Compuestos
+
+
+        Flujo de trabajo
+            # Herencia Los elementos hijos reciben los estilos aplicados a los elementos padres
+            # Importancia 
+            # Especificidad, cuanto más especifico sea el selector utilizado, más relevante es el estilo aplicado
+        */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100&display=swap');
+
+        body {
+            background-color: darkgray;
+        }
+
+
+        h2 {
+            /*Selector por etiqueta*/
+            color: blueviolet;
+        }
+
+        p {
+            /*Selector por etiqueta*/
+            color: chocolate;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12pt;
+        }
+
+        /*Selector ID unico e irrepetible*/
+        /*Ojo no lo tenemos que repetir nosotros*/
+        #mensaje {
+            font-size: 30px;
+        }
+
+        /*Selector clase */
+        .subrayado {
+            text-decoration: underline;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        #final {
+            color: red;
+            font-family: 'MuseoModerno', cursive;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Clase 03 HTML</h2>
+        <h2 style="color: aqua;">CSS</h2> <!-- estilo en linea -->
+        <!-- En linea no recomendado -->
+        <!-- Solo para algo muy particular, solo para algo muy especifico -->
+
+        <ul class="subrayado">
+            <li>Hojas de estilo en cascada</li>
+            <li>Se usa sobre elementos HTML</li>
+        </ul>
+        <h2 style="font-size: 48px; text-decoration: underline; text-align: center;  ">Otro titulo</h2>
+
+        <p style="border-style: dotted;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Totam, consectetur! Consectetur delectus architecto natus rem,
+            hic asperiores doloremque commodi accusantium vitae atque dicta,
+            aut eligendi accusamus! Quae minus provident modi?</p>
+
+        <span id="mensaje" ; class="subrayado">Hola alumnos estamos en clase</span>
+        <!-- maleable golazo--> <!-- Ojo!! ¿Se puede reemplazar con alguna etiqueta con valor semantico?  -->
+        <div>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Culpa dolores ea facilis quibusdam dolorem eos quia,
+                sit, cumque enim fugit ratione cum ducimus architecto maiores,
+                pariatur natus? Accusamus, ad.</p>
+            <ol>
+                <li>Primero</li>
+                <ul>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                </ul>
+                <li>Segundo</li>
+            </ol>
+        </div>
+
+        <div id="final"> Museo Moderno </div>
+
+    <!-- vinculos -->
+    <a href="https://www.google.com.ar">Google</a>
+    <a href="https://www.clarin.com/">Clarin</a>
+
+
+
+</body>
+
+</html>
+
+
+<!-- google fonts 
+
+Peso y stylo
+
+
+-->
